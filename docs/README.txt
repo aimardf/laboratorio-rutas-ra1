@@ -1,0 +1,1 @@
+Aquí iremos guardando capturas e informe del proyecto.
