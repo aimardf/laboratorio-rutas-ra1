@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laboratorio de Rutas RA1</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>Laboratorio de rutas</h1>
+      <p>Comparación de algoritmos de búsqueda</p>
+    </div>
+    <div class="badge">RA1 · PIA</div>
+  </header>
+
+  <main class="layout">
+    <aside class="panel left-panel">
+      <section>
+        <h2>Editor</h2>
+        <div class="tool-grid">
+          <button class="tool active" data-tool="start">🟢 Inicio</button>
+          <button class="tool" data-tool="goal">🏁 Meta</button>
+          <button class="tool" data-tool="wall">⬛ Obstáculo</button>
+          <button class="tool" data-tool="weight">🟨 Coste alto</button>
+          <button class="tool" data-tool="erase">🧽 Borrar</button>
+        </div>
+      </section>
+
+      <section>
+        <h2>Algoritmo</h2>
+        <select id="algorithm">
+          <option value="bfs">BFS</option>
+          <option value="dfs">DFS</option>
+          <option value="ucs">Coste uniforme (UCS)</option>
+          <option value="astar">A*</option>
+          <option value="bidirectional">Búsqueda bidireccional</option>
+        </select>
+
+        <div class="speed-control">
+          <label for="speed">Velocidad</label>
+          <input type="range" id="speed" min="1" max="5" value="3" step="1">
+          <button id="pauseBtn" type="button" disabled>⏸ Pausar</button>
+        </div>
+
+        <div class="controls">
+          <button id="runBtn" class="primary">▶ Ejecutar</button>
+          <button id="compareBtn">⚖ Comparar todos</button>
+          <button id="clearPathBtn">Limpiar ruta</button>
+          <button id="resetBtn">Reiniciar mapa</button>
+        </div>
+      </section>
+
+      <section>
+        <h2>Escenarios</h2>
+        <button class="scenario-btn" data-scenario="1">1 · Menos pasos</button>
+        <button class="scenario-btn" data-scenario="2">2 · Atajo caro</button>
+        <button class="scenario-btn" data-scenario="3">3 · Varias metas</button>
+        <button class="scenario-btn" data-scenario="4">4 · Sin solución</button>
+      </section>
+    </aside>
+
+    <section class="center">
+      <div class="map-card">
+        <div class="map-header">
+          <div>
+            <h2>Mapa 20 × 20</h2>
+            <p>Haz clic en las celdas para editar el escenario.</p>
+          </div>
+          <div class="legend">
+            <span>🟢 Inicio</span>
+            <span>🏁 Meta</span>
+            <span>⬛ Muro</span>
+            <span>🟨 Coste 5</span>
+          </div>
+        </div>
+
+        <div id="grid" class="grid" aria-label="Tablero de rutas"></div>
+      </div>
+    </section>
+
+    <aside class="panel right-panel">
+      <section>
+        <h2>Resultados</h2>
+        <div class="metrics">
+          <div class="metric">
+            <span>Estado</span>
+            <strong id="status">Preparado</strong>
+          </div>
+          <div class="metric">
+            <span>Pasos</span>
+            <strong id="steps">0</strong>
+          </div>
+          <div class="metric">
+            <span>Coste</span>
+            <strong id="cost">0</strong>
+          </div>
+          <div class="metric">
+            <span>Exploradas</span>
+            <strong id="explored">0</strong>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Comparación</h2>
+        <div id="comparison" class="comparison-empty">
+          Ejecuta “Comparar todos” para ver BFS, DFS, UCS y A*.
+        </div>
+      </section>
+
+      <section class="note">
+        <h3>Objetivo</h3>
+        <p>
+          Comparar cómo se comportan distintos algoritmos sobre el mismo mapa,
+          teniendo en cuenta pasos, coste y celdas exploradas.
+        </p>
+      </section>
+    </aside>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
