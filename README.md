@@ -1,8 +1,8 @@
-# Laboratorio de rutas · RA1
+# Laberinto de rutas · RA1
 
 ## Objetivo
 
-Aplicación web que reproduce un laboratorio de rutas: un tablero de 20 × 20
+Aplicación web que reproduce un laberinto de rutas: un tablero de 20 × 20
 celdas donde se define un inicio, una o varias metas, obstáculos y baldosas
 con coste, y sobre el que se ejecutan y comparan cuatro algoritmos de
 búsqueda (BFS, DFS, UCS y A*). El proyecto es evidencia del RA1 de PIA
@@ -92,7 +92,7 @@ el coste óptimo en los escenarios con pesos no negativos.
 ## Capturas
 
 Las capturas de la aplicación y de los cuatro escenarios se incluyen en el
-informe técnico y en `docs/capturas/` (pendientes de añadir).
+informe técnico y en `docs/capturas/`.
 
 ## Limitaciones
 
@@ -115,9 +115,4 @@ informe técnico y en `docs/capturas/` (pendientes de añadir).
 
 - Repositorio: https://github.com/aimardf/laboratorio-rutas-ra1
 - Despliegue en Netlify: https://laberinto-aimar.netlify.app
-- Informe técnico (PDF): _pendiente de añadir_
-
-## Pendiente
-
-- Añadir capturas reales de la aplicación en `docs/capturas/`
-- Preparar informe técnico
+- Informe técnico (PDF): [`docs/Informe_tecnico_Laberinto_Rutas_RA1_Aimar.pdf`](docs/Informe_tecnico_Laberinto_Rutas_RA1_Aimar.pdf)
