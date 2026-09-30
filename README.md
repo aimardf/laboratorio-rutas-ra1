@@ -114,10 +114,10 @@ informe técnico y en `docs/capturas/` (pendientes de añadir).
 ## Enlaces
 
 - Repositorio: https://github.com/aimardf/laboratorio-rutas-ra1
-- Despliegue en Netlify: _pendiente de añadir_
+- Despliegue en Netlify: https://laberinto-aimar.netlify.app
 - Informe técnico (PDF): _pendiente de añadir_
 
 ## Pendiente
 
 - Añadir capturas reales de la aplicación en `docs/capturas/`
-- Preparar informe técnico y Netlify
+- Preparar informe técnico
