@@ -115,4 +115,4 @@ informe técnico y en `docs/capturas/`.
 
 - Repositorio: https://github.com/aimardf/laboratorio-rutas-ra1
 - Despliegue en Netlify: https://laberinto-aimar.netlify.app
-- Informe técnico (PDF): se entrega junto al proyecto.
+- Informe técnico (PDF): [`docs/Informe_tecnico_Laberinto_Rutas_RA1_Aimar (1).pdf`](docs/Informe_tecnico_Laberinto_Rutas_RA1_Aimar%20(1).pdf)
