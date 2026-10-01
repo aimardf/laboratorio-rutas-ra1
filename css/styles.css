@@ -133,7 +133,7 @@ button.primary:hover {
 
 .speed-control {
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: auto 1fr;
   align-items: center;
   gap: 8px;
   margin-top: 12px;
@@ -144,7 +144,7 @@ button.primary:hover {
   font-size: 0.9rem;
 }
 
-.speed-control button:disabled {
+#pauseBtn:disabled {
   opacity: 0.5;
   cursor: not-allowed;
 }
